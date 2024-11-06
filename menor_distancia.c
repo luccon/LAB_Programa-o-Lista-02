@@ -1,6 +1,6 @@
 #include <stdio.h> 
 #include <stdlib.h>
-#define TAM 10
+#define TAM 3
 unsigned char x[TAM], y[TAM], distancia[TAM];
 char menor_dis;
 
@@ -23,15 +23,16 @@ void distancias(unsigned char var1[TAM], unsigned char var2[TAM], unsigned char 
     }
 }
 void menor_distancia(unsigned char distancia[TAM], char menor_dis){
-    int aux = distancia[0];
+    int aux = distancia[0], aux_2 = 0;
     for(int i = 0; i < TAM; i++){
         if(aux < distancia[i]){
         } else if (aux > distancia[i]){
             aux = distancia[i];
+            aux_2 = i;
         }
     }
     menor_dis = aux;
-    printf("Menor distância entre os pontos é:%d\n",menor_dis);
+    printf("Menor distância é entre os pontos X[%d] e Y[%d]:%d\n",aux_2,aux_2,menor_dis);
 }
 
 int main(){
