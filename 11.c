@@ -2,7 +2,7 @@
 
 int TAM_A = 0, TAM_B = 0;
 
-void quadrados (TAM_A, TAM_B){
+void quadrados(TAM_A, TAM_B){
     printf("Verificando os quadrados dos multiplos de 4 na faixa %d a %d.\n",TAM_A,TAM_B);
     for (int i = TAM_A; i <= TAM_B; i++){
         if (i % 4 == 0){
