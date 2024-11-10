@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int DecimalBinario (int num) {
+void DecimalBinario (int num) {
     for (int i = 8; i >= 0; i--){
         int bit = (num >> i) & 1;
         printf("%d",bit);
